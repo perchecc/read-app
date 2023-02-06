@@ -3,7 +3,7 @@ const TransformPages = require('uni-read-pages');
 const { webpack } = new TransformPages();
 
 module.exports = {
-  transpileDependencies: ['luch-request', 'uni-simple-router'],
+  transpileDependencies: ['luch-request', 'uni-simple-router', 'uview-ui'],
   configureWebpack: {
     plugins: [
       new webpack.DefinePlugin({

@@ -4,6 +4,7 @@
     <view>
       <text class="title">{{ title }}</text>
     </view>
+    <tab-bar></tab-bar>
   </view>
 </template>
 
@@ -11,10 +12,10 @@
 export default {
   data() {
     return {
-      title: "Hello2",
+      title: 'Hello2',
     };
   },
-  onLoad() {},
+  onLoad() { },
   methods: {},
 };
 </script>

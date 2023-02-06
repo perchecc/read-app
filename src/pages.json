@@ -1,16 +1,54 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	}
+  "easycom": {
+    "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+  },
+  "pages": [
+    {
+      "path": "pages/book-shelf/index",
+      "style": {
+        "navigationBarTitleText": "书架"
+      }
+    },
+    {
+      "path": "pages/book-market/index",
+      "style": {
+        "navigationBarTitleText": "书城"
+      }
+    },
+    {
+      "path": "pages/book-store/index",
+      "style": {
+        "navigationBarTitleText": "书库"
+      }
+    },
+    {
+      "path": "pages/user/index",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "阅读小程序",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#f9f9f9"
+  },
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/book-shelf/index"
+      },
+      {
+        "pagePath": "pages/book-market/index"
+      },
+      {
+        "pagePath": "pages/book-store/index"
+      },
+      {
+        "pagePath": "pages/user/index"
+      }
+    ]
+  }
 }
